@@ -6268,6 +6268,8 @@ Main Slider Banner
 
 
 .facilitiesCard {
+  max-height: 32rem;
+  min-height: 32rem;
   transition: all .3s ease-in-out;
   box-shadow: -1px 20px 20px 0px rgb(241, 241, 241);
 }

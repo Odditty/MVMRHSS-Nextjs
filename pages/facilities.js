@@ -55,6 +55,7 @@ function facilities() {
                 <img
                   src="/images/school_images/abt-topimg.jpg"
                   alt="facilitiesImg"
+                  width="100%"
                 />
               </div>
               <ul className="col-md-6">
