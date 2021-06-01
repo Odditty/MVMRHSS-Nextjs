@@ -1,6 +1,9 @@
+import { useState } from "react";
 import facilityLists from "../util/facilityList";
 
 function facilities() {
+  const [showModal, setShowModal] = useState("");
+
   return (
     <div>
       <section
@@ -99,13 +102,24 @@ function facilities() {
                     <p className="small text-muted mb-0">
                       {facility.shortDesc}
                     </p>
-                    <div className="btn-primary btn-primary badge badge-primary px-3 rounded-pill font-weight-normal">
+                    <div
+                      onClick={() => setShowModal(facility.title)}
+                      className="btn-primary btn-primary badge badge-primary px-3 rounded-pill font-weight-normal"
+                    >
                       {facility.description ? "Read More" : null}
                     </div>
                   </div>
                 </div>
 
-                <div id="myModal1" className="modal fade" role="dialog">
+                <div
+                  id="myModal1"
+                  className={
+                    showModal === facility.title
+                      ? "modal fade show"
+                      : "modal fade"
+                  }
+                  role="dialog"
+                >
                   <div className="modal-dialog modal-dialog-centered">
                     <div className="modal-content">
                       <div className="modal-header">
@@ -114,20 +128,35 @@ function facilities() {
                         </h5>
                         <button
                           type="button"
-                          className="close"
+                          className="close btn btn-danger"
                           data-dismiss="modal"
                           aria-label="Close"
+                          onClick={() => setShowModal("")}
                         >
                           <span aria-hidden="true">&times;</span>
                         </button>
                       </div>
                       <div className="modal-body row">
                         <div className="col-md-6">
-                          <img src={facility.img} alt={facility.title} />
+                          <div className="modalImgContainer">
+                            <img
+                              src={facility.img}
+                              className="img-fluid"
+                              alt={facility.title}
+                            />
+                          </div>
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-6 py-4">
                           <p>
-                            {facility.description ? facility.description : null}
+                            {facility.description ? (
+                              <div
+                                dangerouslySetInnerHTML={{
+                                  __html: facility.description,
+                                }}
+                              ></div>
+                            ) : null}
+
+                            {/* {facility.description ? facility.description : null} */}
                           </p>
                         </div>
                       </div>

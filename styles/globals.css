@@ -6242,17 +6242,47 @@ Main Slider Banner
 
 /* ////// */
 /* ///Facilities/// */
+
+.facilityGalleryContainer .show {
+  opacity: 1;
+  display: block;
+  z-index: 9999;
+
+}
+
+.facilityGalleryContainer .show .modal-body .modalImgContainer {
+  max-height: 55vh;
+  height: 55vh;
+}
+
+.facilityGalleryContainer .show .modal-body .modalImgContainer img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.facilityGalleryContainer .show .modal-body p {
+  font-size: 1.2rem;
+  color: rgb(17, 17, 17);
+}
+
+
 .facilitiesCard {
   transition: all .3s ease-in-out;
   box-shadow: -1px 20px 20px 0px rgb(241, 241, 241);
 }
 
 .facilitiesCard .cardTopImg {
+  max-height: 250px;
   overflow: hidden;
+  object-fit: cover;
 }
 
 .facilitiesCard .cardTopImg img {
+  height: 100%;
+  width: 100%;
   transition: all .3s linear;
+  object-fit: cover;
 }
 
 .facilitiesCard:hover {
