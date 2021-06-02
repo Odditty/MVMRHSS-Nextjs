@@ -92,6 +92,11 @@ a {
 } */
 
 /*===Base Css===*/
+#nprogress .bar {
+  height: 6px !important;
+}
+
+
 
 html,
 body {

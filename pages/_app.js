@@ -1,13 +1,25 @@
 import Head from "next/head";
+import Router from "next/router";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import "../styles/globals.css";
 import "../styles/responsive.css";
+import "../styles/imageUpload.css";
+import "../styles/adminStyle.css";
+import { AuthProvider } from "../contexts/AuthContext";
+import NProgress from "nprogress"; //nprogress module
+import "nprogress/nprogress.css";
+
+//Binding events.
+Router.events.on("routeChangeStart", () => NProgress.start());
+Router.events.on("routeChangeComplete", () => NProgress.done());
+Router.events.on("routeChangeError", () => NProgress.done());
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
+        <title>M.V.M Higher Secondary School</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
@@ -29,7 +41,9 @@ function MyApp({ Component, pageProps }) {
         />
       </Head>
       <Header />
-      <Component {...pageProps} />
+      <AuthProvider>
+        <Component {...pageProps} />
+      </AuthProvider>
       <Footer />
     </>
   );

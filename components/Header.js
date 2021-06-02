@@ -167,6 +167,14 @@ function Header() {
                   </li>
                   <li
                     className={
+                      router.pathname == "/gallery" ? "activeLink" : ""
+                    }
+                    onClick={handleNavBtn}
+                  >
+                    <Link href="/gallery">Gallery</Link>
+                  </li>
+                  <li
+                    className={
                       router.pathname == "/admission" ? "activeLink" : ""
                     }
                     onClick={handleNavBtn}
