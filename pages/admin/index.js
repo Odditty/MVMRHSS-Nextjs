@@ -40,10 +40,10 @@ function AdminLogin() {
 
   return (
     <div className="adminLogin">
-      <div className="adminLoginContainer container">
+      <div className="adminLoginContainer container px-2">
         <h1>ADMIN LOGIN</h1>
         <div className="rightFormContainer">
-          {<p>{error}</p>}
+          {<p className="text-danger">{error}</p>}
           <form onSubmit={handleFormSubmit}>
             <div className="row clearfix">
               <div className="col-sm-12">

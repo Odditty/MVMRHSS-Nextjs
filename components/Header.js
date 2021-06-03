@@ -57,10 +57,15 @@ function Header() {
     <header className="main-header">
       <header className="header-area">
         <div className="container">
-          <div className="row">
+          <div className="row align-items-center">
             <div className="col-xl-3 col-lg-3 col-md-12">
               <div className="header-logo">
-                <a href="/"></a>
+                <a href="/">
+                  <img
+                    src="/images/resources/schoollogo.png"
+                    alt="school_logo"
+                  />
+                </a>
               </div>
             </div>
             <div className="col-xl-9 col-lg-9 col-md-12">

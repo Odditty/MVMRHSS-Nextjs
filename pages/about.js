@@ -69,7 +69,7 @@ function about() {
               lineHeight: "40px",
             }}
           >
-            <div className="container">
+            <div className="container aboutPoints">
               <ul>
                 <li>
                   •&nbsp;Conduct monthly test in every month, in addition to

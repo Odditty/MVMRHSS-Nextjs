@@ -468,6 +468,7 @@
         max-height: 350px;
         max-width: none;
         overflow: auto;
+        overflow-y: hidden;
         float: none;
         width: 100%;
         margin: 0 0 15px;
