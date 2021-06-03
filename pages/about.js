@@ -1,9 +1,12 @@
 function about() {
   return (
-    <div style={{ overflowX: "hidden" }}>
+    <div>
       <section
         className="page-title"
-        style={{ background: "url(/images/school_images/title-image.jpg)" }}
+        style={{
+          background: "url(/images/school_images/title-image.jpg)",
+          backgroundSize: "100vw 100% !important",
+        }}
       >
         <div className="container clearfix">
           <div className="title pull-left">
@@ -29,6 +32,7 @@ function about() {
           fontWeight: "100px",
           fontSize: "130%",
           lineHeight: "40px",
+          overflowX: "hidden",
         }}
       >
         <div
@@ -41,7 +45,7 @@ function about() {
             lineHeight: "40px",
           }}
         >
-          <div className=" row px-5 align-items-center">
+          <div className=" row px-3 align-items-center">
             <ul className="col-md-7">
               <li>
                 Assabah Association Trust is a well organized and established

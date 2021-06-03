@@ -378,7 +378,12 @@ export default function Home() {
                     </div>
                     <div className="icon-text pl-2">
                       <p className="mb-0 " style={{ marginLeft: "5px" }}>
-                        info@mvmrhss.com
+                        <a
+                          style={{ color: "#777777" }}
+                          href="mailto:info@mvmrhss.com"
+                        >
+                          info@mvmrhss.com
+                        </a>
                       </p>
                     </div>
                   </div>

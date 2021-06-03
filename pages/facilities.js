@@ -9,8 +9,7 @@ function facilities() {
       <section
         className="page-title"
         style={{
-          background: "url(/images/resources/misson.jpeg)",
-          backgroundSize: "contain",
+          background: "url(/images/resources/facilities.jpg)",
         }}
       >
         <div className="container clearfix">
@@ -50,10 +49,10 @@ function facilities() {
               lineHeight: "40px",
             }}
           >
-            <div className="row">
+            <div className="row align-items-center py-4">
               <div className="col-md-6">
                 <img
-                  src="/images/school_images/abt-topimg.jpg"
+                  src="/images/school_images/slider1.jpg"
                   alt="facilitiesImg"
                   width="100%"
                 />
@@ -70,8 +69,8 @@ function facilities() {
                   the campus
                 </li>
                 <li>
-                  •&nbsp;M.V.M.R.H.S.S provide a spacious play ground for our
-                  student to engage in sports and game
+                  •&nbsp;Provides a spacious play ground for our student to
+                  engage in sports and game
                 </li>
                 <li>
                   •&nbsp;Various educational clubs such as social club,

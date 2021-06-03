@@ -96,8 +96,6 @@ a {
   height: 6px !important;
 }
 
-.scrollTopBtn {}
-
 
 html,
 body {
@@ -714,6 +712,12 @@ button:focus {
   width: 100px;
 }
 
+@media (max-width: 700px) {
+  .header-logo {
+    margin: 0 auto;
+  }
+}
+
 .header-logo img {
   width: 100%;
 }
@@ -763,12 +767,27 @@ button:focus {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all .25s linear;
 }
 
-.header-contact-info ul li .iocn-holder span {}
+.header-contact-info ul li .iocn-holder:hover {
+  background: #2177aa;
+}
 
-.header-contact-info ul li .iocn-holder span:before {
-  color: #4b98c4;
+
+
+.header-contact-info ul li .iocn-holder i {
+  color: #2177aa;
+  font-size: 22px;
+}
+
+.header-contact-info ul li .iocn-holder i:hover {
+  color: white !important;
+
+}
+
+.header-contact-info ul li .iocn-holder:hover>.header-contact-info ul li .iocn-holder i {
+  color: white !important;
 }
 
 .header-contact-info ul li .text-holder {
@@ -1169,6 +1188,7 @@ Main Slider Banner
 
 .sliderContainer .sliderSlide .sliderLinks {
   position: absolute;
+  width: 100%;
   top: 50%;
   left: 50%;
   z-index: 5;
@@ -1179,6 +1199,7 @@ Main Slider Banner
   font-size: 3rem;
   color: white;
   animation: downAnim 1s ease-in-out alternate;
+  text-align: center;
 }
 
 @keyframes downAnim {
@@ -4079,7 +4100,7 @@ Main Slider Banner
 .page-title {
   position: relative;
   z-index: 1;
-  background-size: 100vw 100% !important;
+  background-size: 100vw 100vh !important;
   background-repeat: no-repeat !important;
   padding: 200px 0px 130px;
   top: -70px;

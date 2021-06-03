@@ -73,10 +73,7 @@ function Header() {
                 <ul>
                   <li>
                     <div className="iocn-holder">
-                      <i
-                        style={{ color: "#2177aa", fontSize: "22px" }}
-                        className="fas fa-home"
-                      ></i>
+                      <i className="fas fa-home"></i>
                     </div>
                     <div className="text-holder">
                       <strong>ADDRESS:</strong>
@@ -85,10 +82,7 @@ function Header() {
                   </li>
                   <li>
                     <div className="iocn-holder">
-                      <i
-                        style={{ color: "#2177aa", fontSize: "22px" }}
-                        className="fas fa-phone"
-                      ></i>
+                      <i className="fas fa-phone"></i>
                     </div>
                     <div className="text-holder">
                       <strong>PHONE:</strong>

@@ -3,7 +3,7 @@ function management() {
     <div>
       <section
         className="page-title"
-        style={{ background: " url(/images/resources/research.jpeg)" }}
+        style={{ background: " url(/images/resources/management.jpg)" }}
       >
         <div className="container clearfix">
           <div className="title pull-left">
