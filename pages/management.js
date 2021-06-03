@@ -25,7 +25,7 @@ function management() {
         className="container managementContainer"
         style={{
           color: "black !important",
-          padding: "40px 10px",
+          padding: "60px 10px",
           fontWeight: "100px",
           lineHeight: "40px",
           width: "80%",
@@ -38,8 +38,8 @@ function management() {
         </p>
 
         <div className="row mt-5">
-          <div className=" col-md-3 mb-4 align-center">
-            <div className="facilitiesCard bg-white rounded shadow-sm">
+          <div className=" col-md-3 mb-5 align-center">
+            <div className="facilitiesCard managementCard managementCard bg-white rounded shadow-sm">
               <div className="cardTopImg">
                 <img
                   src="/images/school_images/chairman.jpg"
@@ -57,8 +57,8 @@ function management() {
             </div>
           </div>
 
-          <div className=" col-md-3 mb-4">
-            <div className="facilitiesCard bg-white rounded shadow-sm">
+          <div className=" col-md-3 mb-5">
+            <div className="facilitiesCard managementCard bg-white rounded shadow-sm">
               <div className="cardTopImg">
                 <img
                   src="/images/school_images/president.jpg"
@@ -76,8 +76,8 @@ function management() {
             </div>
           </div>
 
-          <div className=" col-md-3 mb-4">
-            <div className="facilitiesCard bg-white rounded shadow-sm">
+          <div className=" col-md-3 mb-5">
+            <div className="facilitiesCard managementCard bg-white rounded shadow-sm">
               <div className="cardTopImg">
                 <img
                   src="/images/school_images/vice_president.jpg"
@@ -95,8 +95,8 @@ function management() {
             </div>
           </div>
 
-          <div className=" col-md-3 mb-4">
-            <div className="facilitiesCard bg-white rounded shadow-sm">
+          <div className=" col-md-3 mb-5">
+            <div className="facilitiesCard managementCard bg-white rounded shadow-sm">
               <div className="cardTopImg">
                 <img
                   src="/images/school_images/general_secretary.jpg"
@@ -114,8 +114,8 @@ function management() {
             </div>
           </div>
 
-          {/* <div className=" col-md-3 mb-4 align-center">
-            <div className="facilitiesCard bg-white rounded shadow-sm">
+          {/* <div className=" col-md-3 mb-5 align-center">
+            <div className="facilitiesCard managementCard bg-white rounded shadow-sm">
               <div className="cardTopImg">
                 <img
                   src="/images/school_images/education_secretary.jpg"
@@ -133,8 +133,8 @@ function management() {
             </div>
           </div> */}
 
-          <div className=" col-md-3 mb-4">
-            <div className="facilitiesCard bg-white rounded shadow-sm">
+          <div className=" col-md-3 mb-5">
+            <div className="facilitiesCard managementCard bg-white rounded shadow-sm">
               <div className="cardTopImg">
                 <img
                   src="/images/school_images/secretary.jpg"
@@ -152,8 +152,8 @@ function management() {
             </div>
           </div>
 
-          <div className=" col-md-3 mb-4">
-            <div className="facilitiesCard bg-white rounded shadow-sm">
+          <div className=" col-md-3 mb-5">
+            <div className="facilitiesCard managementCard bg-white rounded shadow-sm">
               <div className="cardTopImg">
                 <img
                   src="/images/school_images/secretary_2.jpg"
@@ -171,8 +171,8 @@ function management() {
             </div>
           </div>
 
-          <div className=" col-md-3 mb-4">
-            <div className="facilitiesCard bg-white rounded shadow-sm">
+          <div className=" col-md-3 mb-5">
+            <div className="facilitiesCard managementCard bg-white rounded shadow-sm">
               <div className="cardTopImg">
                 <img
                   src="/images/school_images/treasurer.jpg"

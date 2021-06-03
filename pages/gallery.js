@@ -8,6 +8,25 @@ function gallery() {
 
   return (
     <div className="gallery">
+      <section
+        className="page-title"
+        style={{ background: " url(/images/resources/research.jpg)" }}
+      >
+        <div className="container clearfix">
+          <div className="title pull-left">
+            <h2>Gallery</h2>
+          </div>
+          <ul className="title-manu pull-right">
+            <li>
+              <a href="/">home</a>
+            </li>
+            <li>
+              <i className="fa fa-angle-double-right" aria-hidden="true"></i>
+            </li>
+            <li>Gallery</li>
+          </ul>
+        </div>
+      </section>
       <div className="admin container">
         <ImageGrid setSelectedImg={setSelectedImg} />
         {selectedImg && (

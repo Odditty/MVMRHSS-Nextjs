@@ -9,6 +9,7 @@ import "../styles/adminStyle.css";
 import { AuthProvider } from "../contexts/AuthContext";
 import NProgress from "nprogress"; //nprogress module
 import "nprogress/nprogress.css";
+import ScrollToTop from "../components/ScrollToTop";
 
 //Binding events.
 Router.events.on("routeChangeStart", () => NProgress.start());
@@ -44,6 +45,8 @@ function MyApp({ Component, pageProps }) {
       <AuthProvider>
         <Component {...pageProps} />
       </AuthProvider>
+      <ScrollToTop />
+
       <Footer />
     </>
   );

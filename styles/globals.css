@@ -96,6 +96,7 @@ a {
   height: 6px !important;
 }
 
+.scrollTopBtn {}
 
 
 html,
@@ -562,6 +563,10 @@ button:focus {
   -webkit-box-shadow: 0px 8px 23px -6px rgba(27, 27, 27, 1);
   -moz-box-shadow: 0px 8px 23px -6px rgba(27, 27, 27, 1);
   box-shadow: 0px 8px 23px -6px rgba(27, 27, 27, 1);
+}
+
+.showScrollBtn {
+  display: block;
 }
 
 .scroll-to-top span {
@@ -6343,9 +6348,13 @@ Main Slider Banner
 
 
 /* //////////Management/////////////// */
-.managementContainer .facilitiesCard {
+
+.managementContainer .managementCard {
   width: 75%;
   margin: 0 auto;
+  height: unset !important;
+  min-height: 20rem !important;
+  max-height: 100% !important;
 }
 
 
