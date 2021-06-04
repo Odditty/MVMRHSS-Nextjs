@@ -8,21 +8,12 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import AdminLogin from "./index";
 import { useAuth } from "../../contexts/AuthContext";
 import { useRouter } from "next/router";
-import Link from "next/link";
 
-function AdminDashboard() {
+function AdminGallery() {
   const [user] = useAuthState(auth);
   const [selectedImg, setSelectedImg] = useState(null);
   const { logoutAdmin, admin } = useAuth();
   const router = useRouter();
-
-  // useEffect(() => {
-  //   if (!admin) {
-  //     router.push("/admin");
-  //   }
-  //   return admin;
-  // }, [admin, router]);
-
   const handleLogout = async (e) => {
     e.preventDefault();
     try {
@@ -33,7 +24,7 @@ function AdminDashboard() {
     }
   };
 
-  if (!user) return <AdminLogin />;
+  !user ? <AdminLogin /> : <AdminGallery />;
 
   return (
     <div className="admin">
@@ -45,8 +36,7 @@ function AdminDashboard() {
               Logout
             </button>
           ) : null}
-
-          {/* <h2>Upload Pictures</h2>
+          <h2>Upload Pictures</h2>
           <p className="pt-3">
             Please make sure the images are png/jpg type files.
           </p>
@@ -55,15 +45,10 @@ function AdminDashboard() {
         <ImageGrid setSelectedImg={setSelectedImg} />
         {selectedImg && (
           <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} />
-        )} */}
-        </div>
-        <div className="container adminDashboard">
-          <Link href="/admin/adminGallery">Admin Gallery</Link>
-          <Link href="/admin/adminNews">Admin News</Link>
-        </div>
+        )}
       </div>
     </div>
   );
 }
 
-export default AdminDashboard;
+export default AdminGallery;

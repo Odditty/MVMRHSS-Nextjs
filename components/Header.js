@@ -60,12 +60,12 @@ function Header() {
           <div className="row align-items-center">
             <div className="col-xl-3 col-lg-3 col-md-12">
               <div className="header-logo">
-                <a href="/">
+                <Link href="/">
                   <img
                     src="/images/resources/schoollogo.png"
                     alt="school_logo"
                   />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-xl-9 col-lg-9 col-md-12">

@@ -1,11 +1,17 @@
 import Head from "next/head";
-import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
+import { useCollection } from "react-firebase-hooks/firestore";
+import { store } from "../firebaseConfig";
+import NewsPost from "../components/NewsPost";
 
 export default function Home() {
+  const [realtimePosts, loading, error] = useCollection(
+    store.collection("news").orderBy("createdAt", "desc")
+  );
+
   function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
@@ -192,6 +198,53 @@ export default function Home() {
                     alt="M.V.M Higher Secondary School"
                   />
                 </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="newsContainer py-5 mb-5">
+        <div className="container">
+          <div className="row flex-md-row flex-sm-row flex-sm-column-reverse align-items-start">
+            <div className="col-xl-6 col-lg-12 col-xs-12">
+              <div className="sec-title pb-one">
+                <h4>Latest News</h4>
+              </div>
+              <div
+                className="newContainer border shadow-sm rounded "
+                style={{
+                  maxHeight: "35vh",
+                  overflowX: "hidden",
+                  overflowY: "scroll",
+                }}
+              >
+                {realtimePosts &&
+                  realtimePosts.docs.map((news, i) => (
+                    <NewsPost
+                      key={news.id}
+                      title={news.data().newsTitle}
+                      description={news.data().newsDescription}
+                      createdAt={news.data().createdAt}
+                    />
+                  ))}
+              </div>
+
+              {/* {realtimePosts &&
+                realtimePosts.docs.map((post) => console.log(post.id))} */}
+            </div>
+            <div className="col-xl-6 col-lg-12 col-sm-12">
+              <div className="left-colmun">
+                <div className="content-text">
+                  <div className="image-box">
+                    <figure>
+                      <img
+                        src="/images/school_images/slider2.jpg"
+                        alt="M.V.M Higher Secondary School"
+                      />
+                    </figure>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
