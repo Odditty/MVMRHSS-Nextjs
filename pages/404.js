@@ -4,7 +4,7 @@ export default function FourOhFour() {
   return (
     <div
       style={{
-        minHeight: "75vh",
+        minHeight: "100vh",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",

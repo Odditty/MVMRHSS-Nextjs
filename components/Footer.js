@@ -8,9 +8,9 @@ function Footer() {
             School All rights reserved. Powered by{" "}
             <a
               style={{ textDecoration: "none", color: "inherit" }}
-              href="https://www.oditty.in"
+              href="https://www.odditty.in"
             >
-              Oditty
+              Odditty
             </a>
           </p>
         </div>
