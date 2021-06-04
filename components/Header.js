@@ -62,7 +62,7 @@ function Header() {
               <div className="header-logo">
                 <Link href="/">
                   <img
-                    src="/images/resources/schoollogo.png"
+                    src="/images/favicon/android-chrome-512x512.png"
                     alt="school_logo"
                   />
                 </Link>

@@ -12,7 +12,7 @@ const UploadForm = () => {
 
     if (selected && types.includes(selected.type)) {
       setFile(selected);
-      console.log(selected);
+      // console.log(selected);
       setError("");
     } else {
       setFile(null);

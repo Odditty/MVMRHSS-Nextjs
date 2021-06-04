@@ -709,7 +709,7 @@ button:focus {
 .header-logo {
   position: relative;
   z-index: 1;
-  width: 100px;
+  width: 80px;
 }
 
 @media (max-width: 700px) {

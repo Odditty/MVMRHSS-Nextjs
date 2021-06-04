@@ -3,9 +3,9 @@ const facilityLists = [
     id: 1,
     title: "ACTIVITIES",
     shortDesc:
-      " Admissions are granted in class VI, VII, VIII & IX through an all India level entrance examination. Admission to className XI is based on the availability of ...",
+      " Admissions are granted in class VI, VII, VIII & IX through an all India level entrance examination. Admission to class XI is based on the availability of ...",
     description:
-      "  Admissions are granted in classNamees VI, VII, VIII & IX through an all India level entrance examination. Admission to className XI is based on the availability of seats. The selection criteria include className 10 Board Examination result and performance in the school's internal admission procedure. The applicant should not have completed eleven/ twelve/ thirteen/fourteen/sixteen years on 1st January of the year in which admission is sought for these classNamees. The boys are not permitted to remain in the School after completion of their 18th year, nor after failure in any className for two consecutive years. The boys are also not permitted to remain in the School on failing a public examination class.",
+      "  Admissions are granted in classes VI, VII, VIII & IX through an all India level entrance examination. Admission to class XI is based on the availability of seats. The selection criteria include class 10 Board Examination result and performance in the school's internal admission procedure. The applicant should not have completed eleven/ twelve/ thirteen/fourteen/sixteen years on 1st January of the year in which admission is sought for these classes. The boys are not permitted to remain in the School after completion of their 18th year, nor after failure in any class for two consecutive years. The boys are also not permitted to remain in the School on failing a public examination class.",
     img: "/images/facilities/activitiesImg.jpg",
   },
   {
@@ -14,7 +14,7 @@ const facilityLists = [
     shortDesc:
       "  Well equipped computer lab provide the necessary aid in learning various subject.computer lab facilities are available to all students from 3rd standard to 12th standard ...",
     description:
-      "   Well equipped computer lab provide the necessary aid in learning various subject.computer lab facilities are available to all students from 3rd standard to 12th standard.in high school section IT classNamees are functioning based on programme scheduled by “IT @ school”.",
+      "   Well equipped computer lab provide the necessary aid in learning various subject.computer lab facilities are available to all students from 3rd standard to 12th standard.in high school section IT classes are functioning based on programme scheduled by “IT @ school”.",
     img: "/images/facilities/comLabImg.jpg",
   },
   {
@@ -29,7 +29,7 @@ const facilityLists = [
     id: 4,
     title: " PRAYER HALL / MASJID",
     shortDesc:
-      "  A well furnished Prayer hall/Masjid is functioning in the campus to provide training in Islamic subject. Eminent scholars give moral classNamees for the students.",
+      "  A well furnished Prayer hall/Masjid is functioning in the campus to provide training in Islamic subject. Eminent scholars give moral classes for the students.",
     img: "/images/facilities/prayerImg.jpg",
   },
   {
@@ -67,7 +67,7 @@ const facilityLists = [
     shortDesc:
       " STATUS OF UNIFORM : High school, Lower Primary and Upper Primary Section BOYS: Check shirt coffee brown pants GIRLS: Check terry cotton shirt...",
     description:
-      "   Admissions are granted in classNamees VI, VII, VIII & IX through an all India level entrance examination. Admission to className XI is based on the availability of seats. The selection criteria include className 10 Board Examination result and performance in the school's internal admission procedure. The applicant should not have completed eleven/ twelve/ thirteen/fourteen/sixteen years on 1st January of the year in which admission is sought for these classNamees. The boys are not permitted to remain in the School after completion of their 18th year, nor after failure in any className for two consecutive years. The boys are also not permitted to remain in the School on failing a public examination className",
+      "   Admissions are granted in classes VI, VII, VIII & IX through an all India level entrance examination. Admission to class XI is based on the availability of seats. The selection criteria include class 10 Board Examination result and performance in the school's internal admission procedure. The applicant should not have completed eleven/ twelve/ thirteen/fourteen/sixteen years on 1st January of the year in which admission is sought for these classes. The boys are not permitted to remain in the School after completion of their 18th year, nor after failure in any class for two consecutive years. The boys are also not permitted to remain in the School on failing a public examination class",
     img: "/images/facilities/uniformImg.jpg",
   },
   {
