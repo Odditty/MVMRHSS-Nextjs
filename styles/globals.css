@@ -426,6 +426,10 @@ button:focus {
   -o-transition: all 500ms ease;
 }
 
+.form-group textarea {
+  height: auto;
+}
+
 .form-group input[type="text"]:focus,
 .form-group input[type="email"]:focus,
 .form-group input[type="password"]:focus,
