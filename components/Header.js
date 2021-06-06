@@ -86,7 +86,7 @@ function Header() {
                     </div>
                     <div className="text-holder">
                       <strong>PHONE:</strong>
-                      <p>0494-2650982, 2653696, 2659750</p>
+                      <p>+919567871424,+917593078368</p>
                     </div>
                   </li>
                 </ul>

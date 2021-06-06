@@ -6348,6 +6348,7 @@ Main Slider Banner
 
 .facilitiesCard .cardTopImg {
   max-height: 250px;
+  min-height: 250px;
   overflow: hidden;
   object-fit: cover;
 }
@@ -6355,7 +6356,7 @@ Main Slider Banner
 .facilitiesCard .cardTopImg img {
   height: 100%;
   width: 100%;
-  transition: all .3s linear;
+  transition: all .35s linear;
   object-fit: cover;
 }
 

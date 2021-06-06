@@ -159,11 +159,9 @@ function contactus() {
                       </div>
                       <div className="icon-text">
                         <p>
-                          0494-2650982
+                          +919567871424
                           <br />
-                          0494-2653696
-                          <br />
-                          0494-2659750
+                          +917593078368
                         </p>
                       </div>
                     </div>

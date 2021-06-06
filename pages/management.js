@@ -150,9 +150,10 @@ function management() {
             <div className="facilitiesCard managementCard bg-white rounded shadow-sm">
               <div className="cardTopImg">
                 <img
-                  src="/images/school_images/general_secretary.jpg"
+                  src="/images/school_images/general_secretary1.jpg"
                   alt="General Secretary"
                   className="img-fluid card-img-top"
+                  style={{ transform: "scale(1.25)" }}
                 />
               </div>
               <div className="p-2 text-center">
