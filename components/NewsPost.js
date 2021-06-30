@@ -4,7 +4,18 @@ function NewsPost({ id, title, description, createdAt, admin, handleDelete }) {
       <div className={admin ? "col-9" : "col-12"}>
         <h5>{title}</h5>
         <small className="text-muted">
-          {new Date(createdAt?.toDate()).toLocaleString()}
+          {new Date().toLocaleDateString(createdAt?.toDate()) + 7 >
+          new Date(createdAt?.toDate()).toLocaleString() ? (
+            <span className="newNews position-relative">
+              {new Date(createdAt?.toDate()).toLocaleString()}
+              <span class="position-absolute bottom-0 start-100 ms-2 translate-bottom badge rounded-pill bg-danger">
+                New
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </span>
+          ) : (
+            <span>{new Date(createdAt?.toDate()).toLocaleString()}</span>
+          )}
         </small>
         <p
           style={{

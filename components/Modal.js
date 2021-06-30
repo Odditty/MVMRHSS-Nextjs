@@ -14,12 +14,14 @@ const Modal = ({ setSelectedImg, selectedImg }) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
     >
+      {console.log(selectedImg)}
       <motion.img
-        src={selectedImg}
+        src={selectedImg.url}
         alt="enlarged pic"
         initial={{ y: "-100vh" }}
-        animate={{ y: "25%" }}
+        animate={{ y: "0" }}
       />
+      <motion.p>{selectedImg.imageTitle}</motion.p>
     </motion.div>
   );
 };
