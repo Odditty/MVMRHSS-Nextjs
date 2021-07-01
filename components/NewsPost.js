@@ -1,16 +1,34 @@
+import moment from "moment";
+
 function NewsPost({ id, title, description, createdAt, admin, handleDelete }) {
   return (
     <div className="newsPost row p-3 my-2 border-bottom shadow-sm rounded align-items-center">
       <div className={admin ? "col-9" : "col-12"}>
         <h5>{title}</h5>
         <small className="text-muted">
-          {new Date().toLocaleDateString(createdAt?.toDate()) + 7 >
-          new Date(createdAt?.toDate()).toLocaleString() ? (
+          {/* {console.log(
+            "7 day",
+            moment(new Date(createdAt?.toDate()), "DD-MM-YYYY")
+              .add(7, "days")
+              .format("DD-MM-YYYY")
+          )}
+          {console.log(
+            "created day",
+            moment(new Date(), "DD-MM-YYYY").format("DD-MM-YYYY")
+          )} */}
+          {/* {console.log(
+            moment(new Date()).isBefore(
+              moment(new Date(createdAt?.toDate()), "DD-MM-YYYY").add(7, "days")
+            )
+          )} */}
+          {moment(new Date()).isBefore(
+            moment(new Date(createdAt?.toDate()), "DD-MM-YYYY").add(7, "days")
+          ) ? (
             <span className="newNews position-relative">
               {new Date(createdAt?.toDate()).toLocaleString()}
-              <span class="position-absolute bottom-0 start-100 ms-2 translate-bottom badge rounded-pill bg-danger">
+              <span className="position-absolute bottom-0 start-100 ms-2 translate-bottom badge rounded-pill bg-danger">
                 New
-                <span class="visually-hidden">unread messages</span>
+                <span className="visually-hidden">unread messages</span>
               </span>
             </span>
           ) : (
